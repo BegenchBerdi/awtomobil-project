@@ -1,0 +1,12 @@
+
+const adminRouter = require('../routers/adminRouter')
+const apiRouter = require('../routers/apiRouter')
+
+
+
+
+module.exports=(app)=>{
+    app.use('/api/admin',adminRouter)//1nji suny yaaz
+    app.use('/api',apiRouter)//2nji suny yaaz
+
+}
